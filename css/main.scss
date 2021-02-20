@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto+Condensed:wght@300&display=swap');
+
+@mixin colors {
+    black-font: rgb(29, 29, 29);
+    white-font: white
+}
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    height: 100vh;
+}
+
+@mixin flexDirection ($direction) {
+    display: flex;
+    flex-direction: $direction
+}
+
+@mixin flex-x-postion ($position) {
+    display: flex;
+    justify-content: $position;
+    justify-items: $position;
+}
+
+@mixin flex-y-postion ($position) {
+    display: flex;
+    align-content: $position;
+    align-items: $position;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: auto;
+
+}
+
+/* Header */
+
+header {
+    section {
+        background-image: url('/resources/images/desktop/image-hero.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        // background-attachment: fixed;
+        height: 100vh;
+        text-rendering: optimizeLegibility;
+    }
+
+    .nav-elements {
+
+        .navbar {
+            padding-top: 70px;
+            background: transparent !important;
+
+            a {
+                color: #fff !important;
+
+                &:hover::after {
+                    border-bottom: 2px solid #fff;
+                    content: '';
+                    display: block;
+                    width: 50%;
+                    margin: 0 auto;
+                    padding-top: 10px;
+                }
+            }
+        }
+
+        .navbar-brand {
+            font-family: 'Fredoka One', cursive;
+            font-weight: 400;
+            color: #fff !important;
+            font-size: 32px;
+            justify-content: space-between;
+        }
+
+        .hero-text {
+            color: #fff;
+            border: 1px solid #fff;
+            width: 850px;
+            margin-top: 200px;
+            @include flex-x-postion(start);
+
+            p {
+                font-family: 'Roboto Condensed', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 10px;
+                font-size: 100px;
+                line-height: 100px;
+                padding: 40px 40px 20px 40px;
+            }
+        }
+    }
+}

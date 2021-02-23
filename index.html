@@ -11,11 +11,16 @@
   <title>Frontend Mentor | Loopstudios landing page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" <!-- /*
     bootstrap */ -->
-  <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
   <!-- /* custom css */ -->
-  <link rel="stylesheet" href="./css/main.css">
+
 </head>
+
+
+
 
 <body>
   <header>
@@ -27,8 +32,9 @@
             <a class="navbar-brand" href="#">loopstudios</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
+              <i class="fas fa-bars"></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+                          </button>
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item">
@@ -50,7 +56,7 @@
             </div>
           </div>
         </nav>
-        <div class='hero-text'>
+        <div class='hero-text hero-text_responsive'>
           <p>Immersive experiences that deliver</p>
         </div>
       </div>
@@ -63,11 +69,9 @@
   <section class='container section-2'>
     <div class='interactive-container'>
 
-
       <div class='interactive-container-align'>
-
         <div class='interactive-container-1'>
-          <img src="/resources/images/desktop/image-interactive.jpg" alt="interactive-player">
+          <img class='section-2-image' src="/resources/images/desktop/image-interactive.jpg" alt="interactive-player">
         </div>
         <div class='interactive-container-2'>
           <div class='interactive-container-2-items'>
@@ -100,7 +104,7 @@
 
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-deep-earth.jpg" alt="Night arcade">
+            <img class='image-1'src="/resources/images/desktop/image-deep-earth.jpg" alt="Night arcade">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Deep Earth</p>
@@ -109,7 +113,7 @@
 
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-night-arcade.jpg" alt="Night arcade">
+            <img class='image-2' src="/resources/images/desktop/image-night-arcade.jpg" alt="Night arcade">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Night arcade</p>
@@ -117,7 +121,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-soccer-team.jpg" alt="">
+            <img class='image-3' src="/resources/images/desktop/image-soccer-team.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Soccer team VR</p>
@@ -125,7 +129,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-grid.jpg" alt="">
+            <img class='image-4'src="/resources/images/desktop/image-grid.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>The grid</p>
@@ -133,7 +137,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-from-above.jpg" alt="">
+            <img class='image-5' src="/resources/images/desktop/image-from-above.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>From up above vr</p>
@@ -141,7 +145,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-pocket-borealis.jpg" alt="">
+            <img class='image-6'src="/resources/images/desktop/image-pocket-borealis.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Pocket Borealis</p>
@@ -149,7 +153,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-curiosity.jpg" alt="">
+            <img class='image-7'src="/resources/images/desktop/image-curiosity.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>The curiousity</p>
@@ -157,7 +161,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img src="/resources/images/desktop/image-fisheye.jpg" alt="">
+            <img class='image-8' src="/resources/images/desktop/image-fisheye.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Make it fisheye</p>
@@ -207,6 +211,10 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Sir TLD</a>.
   </div>
+
+  <!-- <script src="./js/script.js"></script> -->
+  <!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
 </body>
 
 </html>

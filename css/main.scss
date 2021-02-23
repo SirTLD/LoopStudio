@@ -2,41 +2,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto+Condensed:wght@300&display=swap');
 
-@mixin colors {
-    black-font: rgb(29, 29, 29);
-    white-font: white
-}
+@import './queries.scss';
 
-@mixin flexCenter {
-    display: flex;
-    justify-content: center;
-    align-item: center;
-    height: 100vh;
-}
+@import './flexprops.scss';
 
-@mixin flexDirection ($direction) {
-    display: flex;
-    flex-direction: $direction
-}
-
-@mixin flex-x-postion ($position) {
-    display: flex;
-    justify-content: $position;
-    justify-items: $position;
-}
-
-@mixin flex-y-postion ($position) {
-    display: flex;
-    align-content: $position;
-    align-items: $position;
-    align-self: $position;
-}
 
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    overflow: auto;
-
+    overflow: none;
 }
 
 * {
@@ -48,6 +22,7 @@
 /* Header */
 
 header {
+
     section {
         background-image: url('/resources/images/desktop/image-hero.jpg');
         background-repeat: no-repeat;
@@ -78,6 +53,13 @@ header {
             }
         }
 
+        .fa-bars {
+            color: #fff !important;
+            border: none !important;
+            outline: none !important;
+            font-size: 32px;
+        }
+
         .navbar-brand {
             font-family: 'Fredoka One', cursive;
             font-weight: 400;
@@ -95,6 +77,11 @@ header {
         }
 
         .hero-text {
+            display: flex;
+
+           
+            
+            background-color: rgb(61, 223, 136);
             color: #fff;
             border: 1px solid #fff;
             width: 850px;
@@ -108,11 +95,35 @@ header {
                 font-size: 100px;
                 line-height: 100px;
                 padding: 40px 40px 20px 40px;
+
+                @media screen and (max-width: $phone) {
+                    display:none;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: $phone) {
+        header {
+            section {
+                background-image: url('/resources/images/mobile/image-hero.jpg');
+
+                    .hero-text {
+                    background-color: red;
+                    margin-top: 50px;
+                    @include flex-x-postion(center);
+                    width: 100px;
+
+                    p {
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }
 }
 
+/* header queries */
 .section-2 {
 
     .interactive-container {
@@ -215,7 +226,7 @@ header {
 
     .creations-list {
 
-        padding-top:  60px;
+        padding-top: 60px;
 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

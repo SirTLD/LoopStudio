@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,iBAAiB",
+    "sources": [
+        "queries.scss",
+        "flexprops.scss"
+    ],
+    "names": [],
+    "file": "queries.css"
+}

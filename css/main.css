@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Roboto+Condensed:wght@300&display=swap");
+/* breakpoints */
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  overflow: auto;
+  overflow: none;
 }
 
 * {
@@ -41,6 +42,13 @@ header .nav-elements .navbar .nav-link:hover::after {
   padding-top: 10px;
 }
 
+header .nav-elements .fa-bars {
+  color: #fff !important;
+  border: none !important;
+  outline: none !important;
+  font-size: 32px;
+}
+
 header .nav-elements .navbar-brand {
   font-family: 'Fredoka One', cursive;
   font-weight: 400;
@@ -62,12 +70,14 @@ header .nav-elements .collapse {
 }
 
 header .nav-elements .hero-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #3ddf88;
   color: #fff;
   border: 1px solid #fff;
   width: 850px;
   margin-top: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
@@ -84,6 +94,34 @@ header .nav-elements .hero-text p {
   padding: 40px 40px 20px 40px;
 }
 
+@media screen and (max-width: 480px) {
+  header .nav-elements .hero-text p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header header section {
+    background-image: url("/resources/images/mobile/image-hero.jpg");
+  }
+  header header section .hero-text {
+    background-color: red;
+    margin-top: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    justify-items: center;
+    width: 100px;
+  }
+  header header section .hero-text p {
+    font-size: 20px;
+  }
+}
+
+/* header queries */
 .section-2 .interactive-container {
   display: -webkit-box;
   display: -ms-flexbox;

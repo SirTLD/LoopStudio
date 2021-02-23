@@ -1,0 +1,24 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-item: center;
+    height: 100vh;
+}
+
+@mixin flexDirection ($direction) {
+    display: flex;
+    flex-direction: $direction
+}
+
+@mixin flex-x-postion ($position) {
+    display: flex;
+    justify-content: $position;
+    justify-items: $position;
+}
+
+@mixin flex-y-postion ($position) {
+    display: flex;
+    align-content: $position;
+    align-items: $position;
+    align-self: $position;
+}

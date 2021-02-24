@@ -25,41 +25,39 @@
 
 <body>
   <section class='container-responsive section-1'>
-    <div class='responsive'>
-      <header>
-        <div class='container nav-elements'>
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">loopstudios</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-                <!-- <span class="navbar-toggler-icon"></span> -->
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Careers</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Events</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Products</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Support</a>
-                  </li>
-                </ul>
-              </div>
+    <div class='header responsive'>
+      <div class='container nav-elements'>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">loopstudios</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars"></i>
+              <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Support</a>
+                </li>
+              </ul>
             </div>
-          </nav>
-        </div>
-      </header>
-      <div class='hero-text hero-text_responsive'>
+          </div>
+        </nav>
+      </div>
+      <div class='hero-text'>
         <p>Immersive experiences that deliver</p>
       </div>
 
@@ -72,10 +70,9 @@
 
   <section class='container section-2'>
     <div class='interactive-container'>
-
       <div class='interactive-container-align'>
         <div class='interactive-container-1'>
-          <img class='section-2-image' src="/resources/images/desktop/image-interactive.jpg" alt="interactive-player">
+          <img class='section-2-image' src="" alt="interactive-player">
         </div>
         <div class='interactive-container-2'>
           <div class='interactive-container-2-items'>
@@ -95,20 +92,20 @@
 
   <!-- --------------------------------------------------------------- -->
 
-  <section class='container' id="creations-section">
+  <section class='container section-3'>
 
     <div class="container creations">
 
-      <div class='creations-item-1'>
+      <div class='creations-item-button'>
         <h1>Our creations</h1>
-        <button class='btn-1'>See all</button>
+        <button class='btn-1  desktop-only'>See all</button>
       </div>
 
       <div class='container creations-list'>
 
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-1' src="/resources/images/desktop/image-deep-earth.jpg" alt="Night arcade">
+            <img id='pic-1' class='image-1' src="/resources/images/mobile/image-deep-earth.jpg" alt="Night arcade">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Deep Earth</p>
@@ -117,7 +114,7 @@
 
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-2' src="/resources/images/desktop/image-night-arcade.jpg" alt="Night arcade">
+            <img id='pic-2' class='image-2' src="/resources/images/mobile/image-night-arcade.jpg" alt="Night arcade">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Night arcade</p>
@@ -125,7 +122,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-3' src="/resources/images/desktop/image-soccer-team.jpg" alt="">
+            <img id='pic-3' class='image-3' src="/resources/images/mobile/image-soccer-team.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Soccer team VR</p>
@@ -133,7 +130,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-4' src="/resources/images/desktop/image-grid.jpg" alt="">
+            <img id='pic-4' class='image-4' src="/resources/images/mobile/image-grid.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>The grid</p>
@@ -141,7 +138,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-5' src="/resources/images/desktop/image-from-above.jpg" alt="">
+            <img id='pic-5' class='image-5' src="/resources/images/mobile/image-from-above.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>From up above vr</p>
@@ -149,7 +146,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-6' src="/resources/images/desktop/image-pocket-borealis.jpg" alt="">
+            <img id='pic-6' class='image-6' src="/resources/images/mobile/image-pocket-borealis.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Pocket Borealis</p>
@@ -157,7 +154,7 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-7' src="/resources/images/desktop/image-curiosity.jpg" alt="">
+            <img id='pic-7' class='image-7' src="/resources/images/mobile/image-curiosity.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>The curiousity</p>
@@ -165,12 +162,17 @@
         </div>
         <div class='creations-item-2'>
           <div class='creations-items-2__image'>
-            <img class='image-8' src="/resources/images/desktop/image-fisheye.jpg" alt="">
+            <img id='pic-8' class='image-8' src="/resources/images/mobile/image-fisheye.jpg" alt="">
           </div>
           <div class='creations-items-2__image__title'>
             <p>Make it fisheye</p>
           </div>
         </div>
+
+        <div class='creations-item-button'>
+          <button class='btn-1  mobile-only'>See all</button>
+        </div>
+
       </div>
 
   </section>
@@ -184,7 +186,7 @@
           <p>loopstudios</p>
         </div>
 
-        <div class="footer-icons">
+        <div class="footer-icons-desktop-only">
           <i class="fab fa-facebook-square"></i>
           <i class="fab fa-twitter"></i>
           <i class="fab fa-pinterest"></i>
@@ -201,10 +203,20 @@
           <a href="#">Support</a>
         </div>
 
-        <div class="footer-copyright">
-          © 2021 Loopstudios. All rights reserved.
+        <div class='footer-icons-copyright'>
+          <div class="footer-icons-mobile-only">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-pinterest"></i>
+            <i class="fab fa-instagram"></i>
+          </div>
+
+          <div class="footer-copyright">
+            <p>© 2021 Loopstudios. All rights reserved.</p>
+          </div>
         </div>
       </div>
+
 
 
     </div>

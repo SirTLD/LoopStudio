@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,iBAAiB",
+    "mappings": "AC2GA,oBAAoB;ADzGpB,iBAAiB",
     "sources": [
         "queries.scss",
         "flexprops.scss"

@@ -237,24 +237,31 @@ footer {
 
         .footer-links {
             // background-color: red;
-            width: 30%;
-            display: flex;
+           display: flex;
             @include flexDirection(column);
             @include flex-x-position(center);
-            margin-bottom: 40px;
+            margin-bottom: 50px; 
             text-align: center;
 
-            a {
-
-                color: #fff !important;
-                text-decoration: none;
-                font-size: 24px;
-                line-height: 50px;
-
+            .footer-link-items{
+                margin: 0 auto;
+               
+                width: 30%;
+                a {
+                    color: #fff !important;
+                    text-decoration: none;
+                    font-size: 24px;
+                    line-height: 50px;    
+                }
             }
+            
         }
 
         .footer-icons-copyright {
+            @include flexDirection(column);
+            @include flex-x-position(center);
+
+            
             .footer-icons-mobile-only {
                 display: flex;
                 justify-content: space-evenly;
@@ -263,19 +270,23 @@ footer {
                     padding-bottom: 30px;
                     color: rgb(255, 255, 255);
                     font-size: 32px;
-                   margin-left: 20px;
+                   margin-left: 10px;
                     text-align: center;
                 }
             }
         }
 
         .footer-copyright {
-            width: 300px;
+           @include flex-x-position(center);
+           width: 300px;
+           margin: 0 auto;
+            
+            
            text-align: center;
             // background-color: rgb(41, 107, 16);
             p {
                 text-align: center;
-                font-size: 34px;
+                font-size:16px;
                 color:rgb(88, 88, 88);
             }
         }

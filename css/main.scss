@@ -15,6 +15,12 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    flex-basis: 1400px;
+    margin: 0 auto;
+}
+
 /* Header */
 
 
@@ -66,7 +72,7 @@
             display: flex;
             @include flex-x-position(center);
             @include flex-y-position(center);
-            border: 1px solid #fff;
+            border: 1px solid rgb(255, 255, 255);
 
             width: 320px;
 
@@ -76,14 +82,15 @@
                 letter-spacing: 8px;
                 font-size: 40px;
                 line-height: 50px;
-                padding: 20px 30px;
-                color: #fff;
+                padding: 40px 30px;
+                color: rgb(255, 255, 255);
 
             }
 
         }
     }
 
+    /* media queries */
 }
 
 .section-2 {
@@ -237,57 +244,60 @@ footer {
 
         .footer-links {
             // background-color: red;
-           display: flex;
+            display: flex;
             @include flexDirection(column);
             @include flex-x-position(center);
-            margin-bottom: 50px; 
+            margin-bottom: 50px;
             text-align: center;
 
-            .footer-link-items{
+            .footer-link-items {
                 margin: 0 auto;
-               
+
                 width: 30%;
+
                 a {
                     color: #fff !important;
                     text-decoration: none;
                     font-size: 24px;
-                    line-height: 50px;    
+                    line-height: 50px;
                 }
             }
-            
+
         }
 
         .footer-icons-copyright {
             @include flexDirection(column);
             @include flex-x-position(center);
 
-            
+
             .footer-icons-mobile-only {
                 display: flex;
                 justify-content: space-evenly;
+
                 .fab {
                     padding-top: 40px;
                     padding-bottom: 30px;
                     color: rgb(255, 255, 255);
                     font-size: 32px;
-                   margin-left: 10px;
+                    margin-left: 10px;
                     text-align: center;
                 }
             }
         }
 
         .footer-copyright {
-           @include flex-x-position(center);
-           width: 300px;
-           margin: 0 auto;
-            
-            
-           text-align: center;
+            @include flex-x-position(center);
+            width: 300px;
+            margin: 0 auto;
+
+
+            text-align: center;
+
             // background-color: rgb(41, 107, 16);
             p {
                 text-align: center;
-                font-size:16px;
-                color:rgb(88, 88, 88);
+                font-size: 16px;
+                color: rgb(88, 88, 88);
             }
         }
     }

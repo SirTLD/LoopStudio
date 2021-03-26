@@ -3,236 +3,143 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Loopstudios landing page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" <!-- /*
-    bootstrap */ -->
-  <link rel="stylesheet" href="./css/main.css">
-  <!-- CSS only -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
-  <!-- /* custom css */ -->
-
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Loopstudios</title>
 </head>
 
-
-
-
 <body>
-  <section class='container-responsive section-1'>
-    <div class='header responsive'>
-      <div class='container nav-elements'>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">loopstudios</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <i class="fas fa-bars"></i>
-              <!-- <span class="navbar-toggler-icon"></span> -->
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Careers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Events</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Products</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Support</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="brand-title"></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Supports</a></li>
+          </ul>
+        </div>
+      </nav>
       <div class='hero-text'>
-        <p>Immersive experiences that deliver</p>
+        <p>Immersive Experiences that delivers</p>
       </div>
+    </div>
+  </header>
 
+  <!-- ----------------------------------------------------------------------------- -->
+
+  <section class="container intro-text">
+
+    <div class="intro">
+      <div class="intro-img"></div>
+
+      <div class="title-container">
+        <div class='text'>
+          <p class="title">The leader in interactive VR</p>
+          <p class="title-content"> Founded in 2011, Loopstudios has been producing world-class virtual reality
+            projects for some of the best companies around the globe. Our award-winning
+            creations have transformed businesses through digital experiences that bind
+            to their brand.
+          </p>
+        </div>
+
+      </div>
     </div>
 
   </section>
 
-  <!-- 
-  --------------------------------------------------------------- -->
+  <!-- ----------------------------------------------------------------------------- -->
 
-  <section class='container section-2'>
-    <div class='interactive-container'>
-      <div class='interactive-container-align'>
-        <div class='interactive-container-1'>
-          <img class='section-2-image' src="" alt="interactive-player">
-        </div>
-        <div class='interactive-container-2'>
-          <div class='interactive-container-2-items'>
-            <h1>The leader in interactive VR</h1>
-            <p>Founded in 2011, Loopstudios has been producing world-class virtual reality
-              projects for some of the best companies around the globe. Our award-winning
-              creations have transformed businesses through digital experiences that bind
-              to their brand.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-  </section>
-
-  <!-- --------------------------------------------------------------- -->
-
-  <section class='container section-3'>
+  <section class="our-creations">
 
     <div class="container creations">
-
-      <div class='creations-item-button'>
-        <h1>Our creations</h1>
-        <button class='btn-1  desktop-only'>See all</button>
+      <div class="creations-title">
+        <p>
+          Our creations
+        </p>
       </div>
 
-      <div class='container creations-list'>
+      <a href="#">
+        <button class="creations-desktop-cta">See all</button>
+      </a>
 
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-1' class='image-1' src="/resources/images/mobile/image-deep-earth.jpg" alt="Night arcade">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>Deep Earth</p>
-          </div>
-        </div>
+    </div>
 
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-2' class='image-2' src="/resources/images/mobile/image-night-arcade.jpg" alt="Night arcade">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>Night arcade</p>
-          </div>
-        </div>
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-3' class='image-3' src="/resources/images/mobile/image-soccer-team.jpg" alt="">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>Soccer team VR</p>
-          </div>
-        </div>
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-4' class='image-4' src="/resources/images/mobile/image-grid.jpg" alt="">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>The grid</p>
-          </div>
-        </div>
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-5' class='image-5' src="/resources/images/mobile/image-from-above.jpg" alt="">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>From up above vr</p>
-          </div>
-        </div>
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-6' class='image-6' src="/resources/images/mobile/image-pocket-borealis.jpg" alt="">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>Pocket Borealis</p>
-          </div>
-        </div>
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-7' class='image-7' src="/resources/images/mobile/image-curiosity.jpg" alt="">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>The curiousity</p>
-          </div>
-        </div>
-        <div class='creations-item-2'>
-          <div class='creations-items-2__image'>
-            <img id='pic-8' class='image-8' src="/resources/images/mobile/image-fisheye.jpg" alt="">
-          </div>
-          <div class='creations-items-2__image__title'>
-            <p>Make it fisheye</p>
-          </div>
-        </div>
-
-        <div class='creations-item-button'>
-          <button class='btn-1  mobile-only'>See all</button>
-        </div>
-
+    <div class="container creations-img">
+      <div class="img img-1">
+        <p>Deep earth</p>
       </div>
+      <div class="img-2">
+        <p>Night arcade</p>
+      </div>
+      <div class="img-3">
+        <p>Soccer team VR</p>
+      </div>
+      <div class="img-4">
+        <p>The grid</p>
+      </div>
+      <div class="img-5">
+        <p>From up above VR</p>
+      </div>
+      <div class="img-6">
+        <p>Pocket borealis</p>
+      </div>
+      <div class="img-7">
+        <p>The curiosity</p>
+      </div>
+      <div class="img-8">
+        <p>Make it fisheye</p>
+      </div>
+    </div>
+
+    <div class="btn creations-mobile-cta">
+      <a href="#">See all</a>
+    </div>
 
   </section>
+  <!-- 
+  ----------------------------------------------------------------------------- -->
+  <footer class="footer-section">
 
-  <!-- --------------------------------------------------------------- -->
+    <div class="footer-content">
 
-  <footer>
-    <div class="footer-items">
-      <div class='container footer-items-list'>
-        <div class='footer-items-logo'>
-          <p>loopstudios</p>
-        </div>
-
-        <div class="footer-icons-desktop-only">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter"></i>
-          <i class="fab fa-pinterest"></i>
-          <i class="fab fa-instagram"></i>
-        </div>
-      </div>
-
-      <div class='container footer-links'>
-        <div class='footer-link-items'>
-          <a href="#">About</a>
-          <a href="#">Career</a>
-          <a href="#">Event</a>
+      <div class="footer-left-items">
+        <div class="footer-logo"></div>
+        <div class="footer-text-links">
+          <a href="#"> About</a>
+          <a href="#"> Careers</a>
+          <a href="#"> Events</a>
           <a href="#">Products</a>
           <a href="#">Support</a>
         </div>
+      </div>
 
-        <div class='footer-icons-copyright'>
-          <div class="footer-icons-mobile-only">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-pinterest"></i>
-            <i class="fab fa-instagram"></i>
-          </div>
+      <div class="footer-right-items">
+        <div class="footer-logo"></div>
+        <div class="footer-links">
 
-          <div class="footer-copyright">
-            <p>© 2021 Loopstudios. All rights reserved.</p>
-          </div>
         </div>
       </div>
 
-
-
     </div>
 
+    © <span id='current-year'>2021</span>Loopstudios. All rights reserved.
   </footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Sir TLD</a>.
-  </div>
 
-  <!-- <script src="./js/script.js"></script> -->
-  <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
-  </script>
+
+
+
 </body>
+<script src="/script.js"></script>
 
 </html>

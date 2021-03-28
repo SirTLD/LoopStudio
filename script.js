@@ -15,5 +15,5 @@ burgerIcon.addEventListener('click', () => {
     }
   });
 
-  burgerIcon.classList.toggle('.toggle');
+  burgerIcon.classList.toggle('toggle-close');
 });

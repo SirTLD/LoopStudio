@@ -816,7 +816,7 @@ footer {
 @media screen and (min-width: 1280px) {
 
     .container {
-        width: 60%;
+        width: 85%;
     }
 
     .hero-text {
@@ -829,6 +829,18 @@ footer {
     .footer-content {
         width: 85%;
     }
+
+    .footer-text-links {
+
+        a {
+            margin-right: 10%;
+        }
+    }
+
+    .fab:hover {
+        color: rgb(240, 226, 30);
+    }
+
 }
 
 

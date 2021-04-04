@@ -66,13 +66,33 @@ header {
 }
 
 .navbar .nav-links a {
-  display: block;
+  position: relative;
   text-decoration: none;
   color: #fff;
 }
 
-.navbar .nav-links a:hover {
-  color: #f0e21e;
+.navbar .nav-links .link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin-top: 5px;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .3s;
+  -webkit-transition: width .3s;
+  -moz-transition: width .3s;
+  -ms-transition: width .3s;
+  -o-transition: width .3s;
+}
+
+.navbar .nav-links .link:hover::after {
+  width: 100%;
+  transition: width .5s;
+  -webkit-transition: width .5s;
+  -moz-transition: width .5s;
+  -ms-transition: width .5s;
+  -o-transition: width .5s;
 }
 
 .hero-text {
@@ -243,28 +263,6 @@ button a {
       justify-content: space-around;
 }
 
-.img-1:hover,
-.img-2:hover,
-.img-3:hover,
-.img-4:hover,
-.img-5:hover,
-.img-6:hover,
-.img-7:hover,
-.img-8:hover {
-  cursor: pointer;
-}
-
-.img-1:hover p,
-.img-2:hover p,
-.img-3:hover p,
-.img-4:hover p,
-.img-5:hover p,
-.img-6:hover p,
-.img-7:hover p,
-.img-8:hover p {
-  color: black;
-}
-
 .img-1 p,
 .img-2 p,
 .img-3 p,
@@ -284,6 +282,31 @@ button a {
   left: 8%;
   font-weight: 300;
   z-index: 3;
+}
+
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4:hover,
+.img-5:hover,
+.img-6:hover,
+.img-7:hover,
+.img-8:hover {
+  cursor: pointer;
+  background-image: none;
+  background-color: rgba(206, 206, 206, 0.1);
+}
+
+.img-1:hover p,
+.img-2:hover p,
+.img-3:hover p,
+.img-4:hover p,
+.img-5:hover p,
+.img-6:hover p,
+.img-7:hover p,
+.img-8:hover p {
+  color: black;
+  font-weight: bold;
 }
 
 .img-1 {
@@ -369,8 +392,28 @@ footer {
   text-decoration: none;
 }
 
-.footer-text-links a:hover {
-  color: #f0e21e;
+.footer-text-links .link::after {
+  content: '';
+  position: absolute;
+  display: block;
+  margin-top: 5px;
+  width: 0;
+  height: 3px;
+  background: #fff;
+  transition: width .3s;
+  -webkit-transition: width .3s;
+  -moz-transition: width .3s;
+  -ms-transition: width .3s;
+  -o-transition: width .3s;
+}
+
+.footer-text-links .link:hover::after {
+  width: 100%;
+  transition: width .5s;
+  -webkit-transition: width .5s;
+  -moz-transition: width .5s;
+  -ms-transition: width .5s;
+  -o-transition: width .5s;
 }
 
 .footer-right-items {

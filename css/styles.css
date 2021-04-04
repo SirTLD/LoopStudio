@@ -294,7 +294,12 @@ button a {
 .img-8:hover {
   cursor: pointer;
   background-image: none;
-  background-color: rgba(206, 206, 206, 0.1);
+  background-color: rgba(206, 206, 206, 0.8);
+  transition: .5s ease;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -ms-transition: .5s ease;
+  -o-transition: .5s ease;
 }
 
 .img-1:hover p,
@@ -306,7 +311,6 @@ button a {
 .img-7:hover p,
 .img-8:hover p {
   color: black;
-  font-weight: bold;
 }
 
 .img-1 {

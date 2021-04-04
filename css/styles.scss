@@ -275,12 +275,16 @@ button {
 
     &:hover {
         cursor: pointer;
-      background-image: none;
-      background-color: rgba(206, 206, 206, .8;
+        background-image: none;
+        background-color: rgba(206, 206, 206, .8);
+        transition: .5s ease;
+        -webkit-transition: .5s ease;
+        -moz-transition: .5s ease;
+        -ms-transition: .5s ease;
+        -o-transition: .5s ease;
 
         p {
             color: black;
-            font-weight: bold;
         }
     }
 }

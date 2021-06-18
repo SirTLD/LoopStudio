@@ -56,16 +56,6 @@ header {
             margin-left: 50px;
             font-size: 15px;
             line-height: 25px;
-            // &:hover::after {
-            //     position: absolute;
-            //     display: block;
-            //     content: '';
-            //     height: 10px;
-            //     border-bottom: 3px solid #fff;
-            //     width: 2.5%;
-            //     margin: 0 auto;
-            // }
-
         }
 
         a {
@@ -108,6 +98,7 @@ header {
     width: 700px;
     height: 278px;
     border: 2px solid #fff;
+ 
 
     p {
         font-size: 72px;
@@ -129,7 +120,6 @@ header {
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    // outline: 1px solid rgb(0, 68, 255);    
     height: 680px;
 }
 
@@ -163,7 +153,6 @@ header {
         flex-direction: column;
         width: 445px;
         height: 250px;
-        // outline: 1px solid orange;
     }
 }
 
@@ -179,6 +168,7 @@ header {
     color: #000;
     opacity: 0.5;
     padding-top: 25px;
+    text-align: left;
 
     p {
         text-align: left;
@@ -231,7 +221,6 @@ button {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    //    background-color: burlywood;
     -moz-column-gap: 10px;
     column-gap: 20px;
     row-gap: 30px;
@@ -259,7 +248,7 @@ button {
     justify-content: space-around;
 
     p {
-        // outline: 1px solid red;
+
         width: 70%;
         position: relative;
         color: #fff;
@@ -342,7 +331,6 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-top: 44px;
-    // outline: 1px solid blue;
 }
 
 .footer-left-items {
@@ -356,7 +344,7 @@ footer {
     width: 300px;
     height: 40px;
     background-repeat: no-repeat;
-    // display: block;
+
 }
 
 .footer-text-links {
@@ -402,7 +390,6 @@ footer {
 
 
     .footer-icons {
-        // background-color: rgb(255, 0, 179);
         color: #fff;
         display: flex;
         flex-direction: row;
@@ -450,27 +437,32 @@ footer {
         flex-direction: row;
         align-items: flex-start;
 
-        .burger div {
-            width: 35px;
-            height: 5px;
-            background-color: #fff;
-            margin: 5px;
-            transition: all 0.3s ease;
-            -webkit-transition: all 0.3s ease;
-            -moz-transition: all 0.3s ease;
-            -ms-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-        }
+        // .burger div {
+        //     width: 35px;
+        //     height: 5px;
+        //     background-color: #fff;
+        //     margin: 5px;
+        //     transition: all 0.3s ease;
+        //     -webkit-transition: all 0.3s ease;
+        //     -moz-transition: all 0.3s ease;
+        //     -ms-transition: all 0.3s ease;
+        //     -o-transition: all 0.3s ease;
+        // }
+
+        // .burger {
+        //     display: block;
+        //     position: relative;
+
+        //     &:hover {
+        //         cursor: pointer;
+        //         color: rgb(240, 226, 30);
+
+        //     }
+        // }
 
         .burger {
-            display: block;
-            position: relative;
-
-            &:hover {
-                cursor: pointer;
-                color: rgb(240, 226, 30);
-
-            }
+            display: inline-block;
+            cursor: pointer;
         }
 
     }
@@ -509,24 +501,32 @@ footer {
         transform: translateX(0%);
     }
 
+
+    .line1,
+    .line2,
+    .line3 {
+        width: 35px;
+        height: 5px;
+        background-color: #fff;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
     .toggle-close .line1 {
-        transform: rotate(-45deg) translate(-5px, 11px);
-        -webkit-transform: rotate(-45deg) translate(-5px, 11px);
-        -moz-transform: rotate(-45deg) translate(-5px, 11px);
-        -ms-transform: rotate(-45deg) translate(-5px, 11px);
-        -o-transform: rotate(-45deg) translate(-5px, 11px);
+        background-color: #fff;
+        transform: rotate(-45deg) translate(-9px, 6px);
     }
 
     .toggle-close .line2 {
         opacity: 0;
+        background-color: #fff;
     }
 
     .toggle-close .line3 {
-        transform: rotate(45deg) translate(-5px, -12px);
-        -webkit-transform: rotate(45deg) translate(-5px, -12px);
-        -moz-transform: rotate(45deg) translate(-5px, -12px);
-        -ms-transform: rotate(45deg) translate(-5px, -12px);
-        -o-transform: rotate(45deg) translate(-5px, -12px);
+        transform: rotate(45deg) translate(-8px, -8px);
+        -moz-transform: rotate(45deg) translate(-8px, -8px);
+        -ms-transform: rotate(45deg) translate(-8px, -8px);
+        -o-transform: rotate(45deg) translate(-8px, -8px);
     }
 
 
@@ -581,18 +581,16 @@ footer {
             display: block;
             padding: 30px 0;
             text-align: center;
-            // background-color: rgb(41, 41, 41);
-            // border: 1px solid rgba(77, 77, 77, 0.4);
 
             a {
                 text-transform: uppercase;
 
-                &:hover {
-                    color:rgb(240, 226, 30);
-                }
+                // &:hover {
+                //     color: rgb(240, 226, 30);
+                // }
             }
 
-            
+
         }
     }
 
@@ -619,7 +617,6 @@ footer {
 
     .intro {
         padding-top: 96px;
-        // margin: 0 auto;
         width: 85%;
         display: flex;
         flex-direction: column;
@@ -686,7 +683,7 @@ footer {
         }
 
         p {
-            // outline: 1px solid red;
+
             width: 40%;
             position: relative;
             color: #fff;
@@ -810,7 +807,7 @@ footer {
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
 
     .container {
         width: 80%;
@@ -837,7 +834,7 @@ footer {
     .title-container {
         margin: 0 auto;
         width: 90%;
-        text-align: center;
+        text-align: left;
     }
 
     .footer-content {
@@ -852,7 +849,7 @@ footer {
     }
 
     .hero-text {
-        width: 80%;
+        width: 70%;
         margin-left: 0;
     }
 
@@ -879,12 +876,37 @@ footer {
 @media screen and (min-width: 1400px) {
 
     .container {
-        width: 80%;
+        width: 70%;
+    }
+
+    .title-content {
+        padding-left: 25px;
     }
 
     .hero-text {
-
-        width: 80%;
+        width: 70%;
     }
 
+}
+
+@media screen and (min-width: 2500px) {
+    .container {
+        width: 40%;
+    }
+
+    .hero-text {
+        width: 65%;
+    }
+
+    
+}
+
+@media screen and (min-width: 2800px) {
+    .container {
+        width: 35%;
+    }
+
+    .hero-text {
+        width: 70%;
+    }
 }

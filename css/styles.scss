@@ -449,29 +449,6 @@ footer {
         flex-direction: row;
         align-items: flex-start;
 
-        // .burger div {
-        //     width: 35px;
-        //     height: 5px;
-        //     background-color: #fff;
-        //     margin: 5px;
-        //     transition: all 0.3s ease;
-        //     -webkit-transition: all 0.3s ease;
-        //     -moz-transition: all 0.3s ease;
-        //     -ms-transition: all 0.3s ease;
-        //     -o-transition: all 0.3s ease;
-        // }
-
-        // .burger {
-        //     display: block;
-        //     position: relative;
-
-        //     &:hover {
-        //         cursor: pointer;
-        //         color: rgb(240, 226, 30);
-
-        //     }
-        // }
-
         .burger {
             display: inline-block;
             cursor: pointer;
@@ -812,6 +789,16 @@ footer {
 
 }
 
+@media screen and (max-width: 320px) {
+    .hero-text {
+
+        p {
+            font-size: 35px;
+        }
+       
+    }
+}
+
 
 @media screen and (min-width: 768px) {
 
@@ -894,6 +881,20 @@ footer {
     }
 
 }
+
+
+@media screen and (min-width: 1920px) {
+    .container {
+        width: 55%;
+    }
+
+    .hero-text {
+        width: 65%;
+    }
+
+    
+}
+
 
 @media screen and (min-width: 2500px) {
     .container {

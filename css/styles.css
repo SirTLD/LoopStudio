@@ -9,7 +9,18 @@
 
 body {
   font-family: 'Alata', sans-serif;
-  width: 100%;
+  width: 100vw;
+  position: relative;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+  width: 100vw;
 }
 
 .container {
@@ -809,6 +820,12 @@ footer {
   }
 }
 
+@media screen and (max-width: 320px) {
+  .hero-text p {
+    font-size: 35px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .container {
     width: 80%;
@@ -867,6 +884,15 @@ footer {
   }
   .hero-text {
     width: 70%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    width: 55%;
+  }
+  .hero-text {
+    width: 65%;
   }
 }
 

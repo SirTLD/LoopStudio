@@ -13,6 +13,13 @@ body {
     width: 100%;
 }
 
+html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative
+  }
+
 
 .container {
     width: 60%;
@@ -583,14 +590,8 @@ footer {
             text-align: center;
 
             a {
-                text-transform: uppercase;
-
-                // &:hover {
-                //     color: rgb(240, 226, 30);
-                // }
+                text-transform: uppercase;              
             }
-
-
         }
     }
 

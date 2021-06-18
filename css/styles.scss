@@ -10,15 +10,20 @@
 
 body {
     font-family: 'Alata', sans-serif;
-    width: 100%;
+    width: 100vw;
+    position: relative;
 }
 
-html, body {
-    overflow-x: hidden;
-  }
-  body {
-    position: relative
-  }
+html {
+    scroll-behavior: smooth;
+}
+
+
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100vw;
+}
 
 
 .container {

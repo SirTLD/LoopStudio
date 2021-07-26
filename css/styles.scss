@@ -837,6 +837,10 @@ footer {
 
 @media screen and (min-width: 1280px) {
 
+    body {
+        position: static;
+    }
+
     .container {
         width: 80%;
     }

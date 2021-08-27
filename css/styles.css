@@ -828,16 +828,19 @@ footer {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 80%;
+    width: 90%;
   }
   .navbar {
     width: 100%;
+  }
+  .link {
+    padding-right: 15px;
   }
   .hero-text {
     margin-left: 0;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    width: 80%;
+    width: 70%;
     height: 240px;
   }
   .hero-text p {
@@ -852,11 +855,21 @@ footer {
     text-align: left;
   }
   .footer-content {
-    width: 50%;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 768px) and (width: 768px) and (height: 1024px) {
+  .footer-logo {
+    background-position: center;
+    margin: 0 auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
+  body {
+    position: static;
+  }
   .container {
     width: 80%;
   }
